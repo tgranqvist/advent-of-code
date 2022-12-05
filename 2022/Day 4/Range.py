@@ -10,7 +10,8 @@ class Range():
 
     def overlaps(self, other) -> bool:
         """Check if this range overlaps with another range"""
-        pass
+        #return self.start == other.start or self.end == other.end
+        return self.start <= other.start <= self.end
 
     def __str__(self) -> str:
         return f"Range of {self.start}..{self.end}"
